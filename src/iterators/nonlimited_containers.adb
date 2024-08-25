@@ -62,7 +62,7 @@ package body Nonlimited_Containers is
          Self.Finalized := True;
 
          -- Since Self.Source points to a constant container
-         -- use the Rosen technique variable to use it 
+         -- use the A2A technique variable to use it 
          -- mutably
          Proxy.Tamper_Count := @ - 1;
       end if;
@@ -84,7 +84,7 @@ package body Nonlimited_Containers is
    begin
       return Result : Iterator(Self'Access) do 
          -- Since Self is passed in as constant ("in" mode), need to use the
-         -- Rosen technique to update the tamper count to ensure the
+         -- A2A technique to update the tamper count to ensure the
          -- container cannot be modified while the iterator exists
          Proxy.Tamper_Count := @ + 1;
       end return;
