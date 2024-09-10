@@ -1,6 +1,11 @@
 package Classes is
 
-   type Great_Grand_Parent is tagged null record;
+   type Ancestor is abstract tagged null record;
+   procedure Print(Self : Ancestor) is abstract;
+   procedure Print_With_Redispatch(Self : Ancestor) is abstract;
+   procedure Print_Without_Redispatch(Self : Ancestor) is abstract;
+
+   type Great_Grand_Parent is new Ancestor with null record;
    procedure Print(Self : Great_Grand_Parent);
    procedure Print_With_Redispatch(Self : Great_Grand_Parent);
    procedure Print_Without_Redispatch(Self : Great_Grand_Parent);
