@@ -1,6 +1,6 @@
 Note: Building dispatch=0.1.0-dev/alire/alire_default.gpr...
 gprbuild: "main.exe" up to date
-Success: Build finished successfully in 0.58 seconds.
+Success: Build finished successfully in 0.59 seconds.
 
 Call everyone's print
 ---------------------
@@ -31,6 +31,16 @@ Child.Print
 Grand_Parent.Print
 Aunt.Print: Grand_Parent.Print
 Cousin.Print
+
+Call Print_Without_Redispatch for everyone
+---------------------
+Great_Grand_Parent.Print
+Great_Grand_Parent.Print
+Great_Grand_Parent.Print
+Great_Grand_Parent.Print
+Great_Grand_Parent.Print
+Great_Grand_Parent.Print
+Great_Grand_Parent.Print
 
 Call Print_As_Great_Grand_Parent for everyone
 ---------------------

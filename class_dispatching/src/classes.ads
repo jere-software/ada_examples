@@ -3,6 +3,7 @@ package Classes is
    type Great_Grand_Parent is tagged null record;
    procedure Print(Self : Great_Grand_Parent);
    procedure Print_With_Redispatch(Self : Great_Grand_Parent);
+   procedure Print_Without_Redispatch(Self : Great_Grand_Parent);
    procedure Print_As_Great_Grand_Parent(Self : Great_Grand_Parent'Class);
    procedure Print_As_Latest_Descendent(Self : Great_Grand_Parent'Class);
 

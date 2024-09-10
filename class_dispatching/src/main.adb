@@ -53,6 +53,18 @@ begin
    Classes.Great_Grand_Parent(Aunt).Print_With_Redispatch;
    Classes.Great_Grand_Parent(Cousin).Print_With_Redispatch;
 
+
+   New_Line;
+   Put_Line("Call Print_Without_Redispatch for everyone");
+   Put_Line("---------------------");
+   Great_Grand_Parent.Print_Without_Redispatch;
+   Grand_Parent.Print_Without_Redispatch;
+   Parent.Print_Without_Redispatch;
+   Child.Print_Without_Redispatch;
+   Uncle.Print_Without_Redispatch;
+   Aunt.Print_Without_Redispatch;
+   Cousin.Print_Without_Redispatch;
+
    New_Line;
    Put_Line("Call Print_As_Great_Grand_Parent for everyone");
    Put_Line("---------------------");
